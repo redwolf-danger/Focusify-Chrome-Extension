@@ -1,0 +1,53 @@
+// const fs = require("chrome-fs");
+// // import {faltu} from "./node_modules/chrome-fs/chrome.js"
+// // const fs = require("./node_modules/chrome-fs/chrome.js"/);
+// // import fs from "./node_modules/chrome-fs/main.js"
+// // let fs = require("fs")
+// console.log("STARTING --- \n\n");
+
+// async function firsttest(){
+// console.log('Test 1. Inside async Function');
+// // let a = await fs.readFile("./notes.txt");
+// let path = "/notes.txt";
+// // let b = await fs.appendFile("harry.txt","\nkaisa lga?\n")
+// // let b = await a.toString();
+// let b = await fs.readdir("./");
+// console.log(b);
+// // console.log(b);
+// };
+// firsttest();
+    
+
+// // let b = await fs.appendFile("harry.txt","\nkaisa lga?\n")
+// // fs.readFile(filename[, options], callback)
+// // ./node_modules/chrome-fs/chrome.js
+// // $ npm install chrome-fs --save
+// // $ browserify -r chrome-fs:fs index.js -o bundle.js
+
+
+
+
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const url = chrome.runtime.getURL('notes.txt');
+console.log(url);
+
+
+// fetch(url)
+//     .then((response) => response.text()) //assuming file contains json
+//     .then((content) => console.log("content is ",content));
+
+/*
+,
+"web_accessible_resources": [
+  {
+    "resources": ["notes.txt"],
+    "matches": [ "" ]
+  }
+]
+
+*/
+},{}]},{},[1]);
+
+
+///
+30 d

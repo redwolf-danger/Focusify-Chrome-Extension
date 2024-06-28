@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    /* background-image: url("../images/onboarding_image.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: blueviolet;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+}
+.flex_center{
+    flex-direction: column;
+    /* border:6px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    list-style: none;
+    /* border:3px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 90%;
+
+}
+.msg{
+    text-align: center;
+}
+li{
+    text-align: center;
+    /* border:4px solid gold; */
+    /* width:150px; */
+}
+.list_section{
+    /* border:4px solid black; */
+    height: 50vh;
+    width: 60%;
+}
+a{
+    text-decoration: none;
+    /* color:red; */
+    color:black;
+    cursor: pointer;
+}
